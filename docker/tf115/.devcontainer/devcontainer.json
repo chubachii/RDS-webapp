@@ -1,0 +1,20 @@
+{
+	// コンテナ名
+	"name": "container_django", 
+
+	// docker-compose.ymlの場所
+	"dockerComposeFile": "../../docker-compose.yml",
+
+	// docker-compose.yml 内のサービス名
+    "service": "django",
+
+	// コンテナ内のどこをワークスペースとするか
+	// docker-compose.yml でマウントした work フォルダーを指定している
+    "workspaceFolder": "/work",
+	
+	// コンテナ内で使用する拡張機能のID
+	"extensions": [
+		"ms-toolsai.jupyter"  // jupyter
+	]
+
+}
